@@ -1,0 +1,30 @@
+name: Sync Docker Image To Aliyun
+
+# refer to https://github.com/actions/starter-workflows/blob/main/ci/docker-publish.yml 
+
+on:
+  workflow_dispatch:
+
+env:
+  REGISTRY: docker.io
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      # sync image to aliyun
+      - name: Login to aliyun
+        uses: docker/login-action@v2.2.0
+        with:
+          registry: ${{ vars.ALIYUN_REGISTRY }}
+          username: ${{ vars.ALIYUN_USER }}
+          password: ${{ secrets.ALIYUN_PWD }}
+          logout: false
+
+      - name: Use Skopeo Tools Sync Image to Docker Hub
+        run: |
+          skopeo copy docker://docker.io/selenium/standalone-firefox:4.25.0-20241010 docker://registry.cn-hangzhou.aliyuncs.com/selenium/standalone-firefox:4.25.0-20241010
