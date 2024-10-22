@@ -27,4 +27,4 @@ jobs:
 
       - name: Use Skopeo Tools Sync Image to Docker Hub
         run: |
-          skopeo copy docker://docker.io/selenium/standalone-firefox:4.25.0-20241010 docker://registry.cn-hangzhou.aliyuncs.com/sepveneto/selenium-standalone-firefox:4.25.0-20241010
+          skopeo copy docker://docker.io/fredblgr/ubuntu-novnc:20.04 docker://registry.cn-hangzhou.aliyuncs.com/sepveneto/ubuntu-novnc:20.04
