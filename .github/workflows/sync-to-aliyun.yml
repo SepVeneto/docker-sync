@@ -27,4 +27,4 @@ jobs:
 
       - name: Use Skopeo Tools Sync Image to Docker Hub
         run: |
-          skopeo copy docker://docker.io/fredblgr/ubuntu-novnc:20.04 docker://registry.cn-hangzhou.aliyuncs.com/sepveneto/ubuntu-novnc:20.04
+          skopeo copy docker://docker.io/u1ih/ubuntu-novnc docker://registry.cn-hangzhou.aliyuncs.com/sepveneto/ubuntu-novnc
