@@ -27,4 +27,4 @@ jobs:
 
       - name: Use Skopeo Tools Sync Image to Docker Hub
         run: |
-          skopeo copy docker://docker.io/mongo:4.4.26 docker://registry.cn-hangzhou.aliyuncs.com/sepveneto/mongo:4.4.26
+          skopeo copy docker://docker.io/nginx:1.29.1 docker://registry.cn-hangzhou.aliyuncs.com/sepveneto/nginx:1.29.1
