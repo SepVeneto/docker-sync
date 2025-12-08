@@ -27,4 +27,4 @@ jobs:
 
       - name: Use Skopeo Tools Sync Image to Docker Hub
         run: |
-          skopeo copy docker://docker.io/redis:7 docker://registry.cn-hangzhou.aliyuncs.com/sepveneto/redis:7
+          skopeo copy docker://docker.redpanda.com/redpandadata/console:v3.2.2 docker://registry.cn-hangzhou.aliyuncs.com/sepveneto/redpanda-console:v3.2.2
