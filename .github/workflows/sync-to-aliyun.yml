@@ -27,4 +27,4 @@ jobs:
 
       - name: Use Skopeo Tools Sync Image to Docker Hub
         run: |
-          skopeo copy docker://docker.io/freshrss/freshrss:alpine docker://registry.cn-hangzhou.aliyuncs.com/sepveneto/freshrss:alpine
+          skopeo copy docker://docker.io/gcr.io/cadvisor/cadvisor:latest docker://registry.cn-hangzhou.aliyuncs.com/sepveneto/cadvisor:latest
