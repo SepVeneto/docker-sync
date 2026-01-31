@@ -27,6 +27,6 @@ jobs:
 
       - name: Use Skopeo Tools Sync Image to Docker Hub
         run: |
-          # skopeo copy docker://docker.io/prom/prometheus:v3.5.1 docker://registry.cn-hangzhou.aliyuncs.com/sepveneto/prometheus:v3.5.1
-          skopeo copy docker://ghcr.io/google/cadvisor:0.56.2 docker://registry.cn-hangzhou.aliyuncs.com/sepveneto/cadvisor:0.56.2
+          skopeo copy docker://docker.io/netdata/netdata:v2.8 docker://registry.cn-hangzhou.aliyuncs.com/sepveneto/netdata:v2.8
+          #skopeo copy docker://ghcr.io/google/cadvisor:0.56.2 docker://registry.cn-hangzhou.aliyuncs.com/sepveneto/cadvisor:0.56.2
 
