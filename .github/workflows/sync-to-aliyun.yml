@@ -27,6 +27,6 @@ jobs:
 
       - name: Use Skopeo Tools Sync Image to Docker Hub
         run: |
-          skopeo copy docker://docker.io/netdata/netdata:v1.45.6 docker://registry.cn-hangzhou.aliyuncs.com/sepveneto/netdata:v1.45.6
+          skopeo copy docker://docker.io/netdata/netdata:v1.47.5 docker://registry.cn-hangzhou.aliyuncs.com/sepveneto/netdata:v1.47.5
           #skopeo copy docker://ghcr.io/google/cadvisor:0.56.2 docker://registry.cn-hangzhou.aliyuncs.com/sepveneto/cadvisor:0.56.2
 
